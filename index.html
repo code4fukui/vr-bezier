@@ -35,7 +35,6 @@ const init = function() {
     box.setAttribute('width', size);
     box.setAttribute('height', size);
     box.setAttribute('depth', size);
-    //box.setAttribute('mixin', 'voxel');
     scene.appendChild(box);
     pnt[i] = box;
   }
@@ -148,10 +147,6 @@ handright.addEventListener('bbuttondown', function(evt) {
 });
 </script>
 <a-scene>
-<a-assets>
-<a-mixin id="voxel" geometry="primitive: box; height: 0.1; width: 0.1; depth: 0.1">
-</a-mixin>
-</a-assets>
 <a-entity id=handleft oculus-touch-controls="hand: left"></a-entity>
 <a-entity id=handright oculus-touch-controls="hand: right"></a-entity>
 </a-scene>
